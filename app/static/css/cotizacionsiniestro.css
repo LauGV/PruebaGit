@@ -1,0 +1,7 @@
+.query-container{
+    left: 0px !important;
+}
+
+.nodraggabletextarea{
+    resize: none;
+}

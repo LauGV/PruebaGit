@@ -1,0 +1,37 @@
+.query-container {
+  max-height: 35vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  left: 8px;
+  right: 0px;
+  z-index: 100;
+  background: white;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 7px 4px 10px 0px rgba(50, 50, 50, 0.5);
+}
+.query-container input {
+  width: 80px;
+  margin: auto;
+  display: block;
+}
+#map_canvas {
+   margin: 0;
+   padding: 0; 
+   width:500px; 
+   height: 350px;
+  }
+  .imgNOGPS{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    margin-left: 30%;
+    margin-top: 25%;
+    opacity: 0.40;
+}
+
+.container {
+    width: 97% !important;
+}

@@ -1,0 +1,32 @@
+.file-box {
+  float: left;
+  width: 220px;
+}
+
+.file {
+  border: 1px solid #e7eaec;
+  padding: 0;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.file .icon {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.file .icon, .file .image {
+  height: 100px;
+  overflow: hidden;
+}
+
+a {
+  cursor: pointer;
+}
+
+.file .icon i {
+  font-size: 70px;
+  color: #dadada;
+}

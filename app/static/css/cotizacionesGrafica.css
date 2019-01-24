@@ -1,0 +1,10 @@
+div.donutContainer {
+width: 50%;
+   
+}
+div.sombra {
+    margin-top: 2px;
+    margin-left: 2px;
+    color: rgb(1, 2, 10);
+    font-size: 30px;
+  }

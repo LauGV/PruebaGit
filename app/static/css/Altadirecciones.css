@@ -1,0 +1,13 @@
+.info{
+    cursor: pointer;
+}
+
+.info:hover{
+    cursor: pointer;
+    background-color: rgba(14, 69, 121, 0.09) !important;
+}
+
+.nodraggabletextarea{
+    resize: none;
+}
+
