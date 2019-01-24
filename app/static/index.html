@@ -29,14 +29,14 @@
     <!--Bootstrap Select [ OPTIONAL ]-->
     <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
     <!--Bootstrap Datepicker [ OPTIONAL ]-->
-   <!--  <link href="plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <!--  <link href="plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
     <!--Morris.js [ OPTIONAL ]-->
     <!-- <link href="plugins/morris-js/morris.min.css" rel="stylesheet"> -->
     <!--dropzone.css []-->
-<!--     <link href="css/dropZone/dropzone.css" rel="stylesheet"> -->
+    <!--     <link href="css/dropZone/dropzone.css" rel="stylesheet"> -->
     <!-- c3 Charts -->
     <link href="css/c3/c3.min.css" rel="stylesheet">
-   <!--  <link href="css/cotizaciones.css" rel="stylesheet">
+    <!--  <link href="css/cotizaciones.css" rel="stylesheet">
     <link href="css/Altadirecciones.css" rel="stylesheet">
     <link href="css/cotizacionesGrafica.css" rel="stylesheet">
     <link href="css/cargaArchivos.css" rel="stylesheet"> -->
@@ -51,7 +51,7 @@
     <div id="container" class="effect aside-float aside-bright mainnav-sm aside-in">
         <!--NAVBAR-->
         <!--===================================================-->
-        <header id="navbar" >
+        <header id="navbar">
             <div id="navbar-container" class="boxed">
                 <!--Brand logo & name-->
                 <!--================================-->
@@ -73,11 +73,13 @@
                                 <i class="demo-pli-view-list pad-rgt"> Asistencia Remota</i>
                             </a>
                         </li>
-
-                      
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="demo-pli-view-list pad-rgt"> Pruebas con git y ramas</i>
+                            </a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-top-links pull-right">
-                       
                         <li id="dropdown-user" class="dropdown">
                             <div>
                                 <span class="pull-right">
@@ -110,14 +112,13 @@
         <!--===================================================-->
         <!--END NAVBAR-->
         <div class="boxed">
-          
             <div id="content-container">
                 <div ng-view></div>
             </div>
             <!--===================================================-->
             <!--MAIN NAVIGATION-->
             <!--===================================================-->
-            <nav id="mainnav-container" >
+            <nav id="mainnav-container">
                 <div id="mainnav">
                     <!--Menu-->
                     <!--================================-->
@@ -132,53 +133,52 @@
                                             <!-- <span class="label label-success pull-right"></span> -->
                                             <img class="img-circle img-sm img-border" src="img/profile-photos/1.png" alt="Profile Picture">
                                         </div>
-                                        <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
+                                            <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
                                             <span class="pull-right dropdown-toggle">
                                             </span>
                                             <p class="mnp-name"> {{userData.nombreCompleto}}</p>
                                             <!-- <span class="mnp-desc">{{datosUsuario[0].correo}}</span> -->
                                         </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <ul id="mainnav-menu" class="list-group">
-                                    <li class="list-header">Navegación</li>
-                                    <li class="uno">
-                                        <a  href="/asistencia" > 
+                                    <ul id="mainnav-menu" class="list-group">
+                                        <li class="list-header">Navegación</li>
+                                        <li class="uno">
+                                            <a  href="/asistencia" >
                                               <i class="fa fa-tv"></i>
                                             <span class="menu-title">
                                                 <strong> Asistencia Remota</strong>
                                             </span>
                                         </a>
-                                    </li>
-                                       <li class="dos">
-                                        <a href="/solicitadas"> 
+                                        </li>
+                                        <li class="dos">
+                                            <a href="/solicitadas">
                                              <i class="fa fa-tv"></i>
                                             <span class="menu-title">
                                                 <strong> Solicitadas</strong>
                                             </span>
                                         </a>
-                                    </li>
-                                       <li class="dos">
-                                        <a href="/atendidas">
+                                        </li>
+                                        <li class="dos">
+                                            <a href="/atendidas">
                                             <i class="fa fa-users"></i>
                                             <span class="menu-title">
                                                 <strong> Atendidas</strong>
                                             </span>
                                         </a>
-                                    </li>
-                        
-                                </ul>
-                                <div class="main">
-                                    <div></div>
-                                    <input type="hidden" id="lgnUser" value="71">
-                                    <!-- [[ user.idUsuario ]] -->
+                                        </li>
+                                    </ul>
+                                    <div class="main">
+                                        <div></div>
+                                        <input type="hidden" id="lgnUser" value="71">
+                                        <!-- [[ user.idUsuario ]] -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!--================================-->
+                        <!--End menu-->
                     </div>
-                    <!--================================-->
-                    <!--End menu-->
-                </div>
             </nav>
             <!--===================================================-->
             <!--END MAIN NAVIGATION-->
@@ -189,12 +189,6 @@
             <i class="pci-chevron chevron-up"></i>
         </button>
         <!--===================================================-->
-
-
-
-
-
-
     </div>
     <!--Interface de usuario-->
     <!-- Librerias Angular-->
@@ -240,42 +234,32 @@
     <!-- ChartJS-->
     <!-- <script src="plugins/chartJs/Chart.min.js"></script> -->
     <script src="plugins/chartJs/Chart.min.js"></script>
-
     <script src="js/smart-table.min.js"></script>
-
     <!--Funciones Comunes-->
     <script src="confront.js"></script>
     <script src="helpers.js"></script>
-
     <!--Librerias de aplicación angular-->
     <script src="AngularJS/registrationModule.js"></script>
     <!--librerias de componenetes-->
     <script src="AngularJS/alertFactory.js"></script>
     <script src="AngularJS/userFactory.js"></script>
     <!-- <script src="AngularJS/facturas/facturasController.js"></script> -->
-  
     <!--Controllers-->
     <script src="AngularJS/Main/mainController.js"></script>
     <script src="AngularJS/Main/mainRepository.js"></script>
     <script src="AngularJS/login/loginController.js"></script>
     <script src="AngularJS/login/loginRepository.js"></script>
-    
-
-
     <script src="AngularJS/asistencia/asistenciaController.js"></script>
     <script src="AngularJS/asistencia/asistenciaRepository.js"></script>
-      <script src="AngularJS/solicitadas/solicitadasController.js"></script>
+    <script src="AngularJS/solicitadas/solicitadasController.js"></script>
     <script src="AngularJS/solicitadas/solicitadasRepository.js"></script>
     <script src="AngularJS/atendidas/atendidasController.js"></script>
-
-
     <!--Librería de dropZone -->
     <script src="js/dropZone/dropzone.js"></script>
     <script src="js/dropZone/ng-dropzone.min.js"></script>
     <!--Controllers-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.7/xlsx.core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.core.min.js"></script>
-
     <!--Alerts-->
     <script src="js/sweetalert/sweetalert.min.js"></script>
     <!-- devextreme -->
